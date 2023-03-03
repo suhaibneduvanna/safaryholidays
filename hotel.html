@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Safary Holidays</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #384047;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background: #f4f7f8;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="email"],
+        input[type="number"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="time"],
+        input[type="url"],
+        textarea,
+        select {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: 0;
+            outline: 0;
+            padding: 15px;
+            width: 100%;
+            background-color: #e8eeef;
+            color: #000000;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+            margin-bottom: 30px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 4px 8px 0;
+        }
+
+        select {
+            padding: 6px;
+            height: 32px;
+            border-radius: 2px;
+        }
+
+        button {
+            padding: 19px 39px 18px 39px;
+            color: #FFF;
+            background-color: #44529f;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border-radius: 5px;
+            width: 100%;
+            border: 1px solid rgb(255, 255, 255);
+            border-width: 1px 1px 3px;
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        fieldset {
+            margin-bottom: 30px;
+            border: none;
+        }
+
+        legend {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        label.light {
+            font-weight: 300;
+            display: inline;
+        }
+
+        .number {
+            background-color: #44529f;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-right: 4px;
+            line-height: 30px;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            border-radius: 100%;
+        }
+
+        @media screen and (min-width: 480px) {
+
+            form {
+                max-width: 480px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="/" class="logo"><img height="140" src="img/logo.png" alt=""></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <!-- <li><a href="#package">Packages</a></li> -->
+            <div class="nav-dropdown">
+                <li><a class="nav-dropdown-item" href="##">Tour Packages</a></li>
+
+                <ul class="dropdown-content">
+                    <li>
+                        <a href="domestic.html">Domestic</a>
+                    </li>
+                    <li>
+                        <a href="international.html">International</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <li><a href="#hajj_umra">Hajj & Umra</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </header>
+
+    <section class="page-section">
+        <div class="text">
+            <h2 style="text-align: center;">Hotel Booking</h2>
+
+            <hr>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <form id="hotelForm">
+
+                    <br>
+                    <fieldset>
+
+                        <label for="destination">Destination:</label>
+                        <input required type="text" id="dest" name="destination" placeholder="Your destination">
+
+                        <label for="chekin">Check in:</label>
+                        <input required type="date" id="chekin" name="chekin">
+
+                        <label for="chekout">Check out:</label>
+                        <input required type="date" id="chekout" name="chekout">
+
+                        <div>
+                            <label for="chekin">No of Adults</label>
+                            <input value="0" min="0" max="20" type="number" id="adults" name="adults">
+
+                            <label for="chekout">No of Children</label>
+                            <input value="0" min="0" max="20" type="number" id="children" name="children">
+                        </div>
+
+
+                    </fieldset>
+
+                    <button type="submit">Book Now</button>
+
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--footer--->
+    <section id="contact">
+        <div class="footer">
+            <div class="main" style="justify-content: space-between;">
+                <div class="row">
+
+                    <a href="/" class="logo"><img height="100" src="img/logo_btm.png" alt=""></a>
+
+                    <a href="/" class="logo"><img style="height: 70px;" src="img/iata.svg" alt=""></a>
+
+                </div>
+
+                <div class="list">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Hajj & Umra</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="list">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="end-text">
+        <p>Copyright ©2023 All rights reserved <br> Developed by <span>Compass Solutions</span></p>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        let form = document.getElementById("hotelForm");
+        form.addEventListener("submit", (e) => {
+            
+
+
+           
+            e.preventDefault()
+            let dest = document.getElementById('dest').value
+            let chekout = document.getElementById('chekout').value
+            let chekin = document.getElementById('chekin').value
+            let adults = document.getElementById('adults').value
+            let children = document.getElementById('children').value
+            let msg = "https://wa.me/917306311611?text=Destination:%20" + dest + "%0aCheck in:%20" + chekin + "%0aCheck out:%20" + chekout + "%0aAdults:%20" + adults + "%0aChildren:%20" + children
+
+
+            window.open(msg);
+
+
+
+
+        })
+    </script>
+
+</body>
+
+</html>
