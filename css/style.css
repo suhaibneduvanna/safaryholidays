@@ -811,6 +811,9 @@ section {
 		padding-left: 0%;
 
 	}
+	.logo img{
+		height: 55px;
+	}
 
 	.list {
 		width: 100%;
