@@ -1,21 +1,20 @@
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+	z-index: 100;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+	margin-top: 16px;
 }
 
 * {
@@ -78,6 +77,12 @@ header {
 	color: var(--main-color);
 }
 
+.iata-logo img {
+
+	height: 50px;
+	margin-top: 20px;
+}
+
 .navbar {
 
 	display: flex;
@@ -127,6 +132,7 @@ header .navbar .dropdown-content a:hover {
 }
 
 #header {
+	padding-top: 30px;
 	/* padding-bottom: 25%; */
 	/* box-shadow: 5px 10px 30px rgb(85 85 85 / 20%); */
 }
@@ -177,8 +183,8 @@ hr {
 }
 
 section {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 100px;
+	padding-right: 100px;
 
 
 }
@@ -235,6 +241,16 @@ section {
 	bottom: 0;
 	left: 0;
 } */
+.inclusion_list li {
+	margin-left: 18px;
+	list-style: square;
+
+}
+
+#home-header {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 
 .home {
 	position: relative;
@@ -384,11 +400,14 @@ section {
 }
 
 .package-content {
+	
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 2rem;
+	justify-content: center;
+
 }
 
 .package-content {
@@ -686,8 +705,22 @@ section {
 		transition: .2s;
 	}
 
+	#header {
+		padding-top: 30px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	#home-header {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
 	section {
-		/* padding: 80px 2%; */
+		padding-left: 50px;
+		padding-right: 50px;
 		transition: .2s;
 	}
 
@@ -703,8 +736,9 @@ section {
 	header {
 		/* padding: 10px 3%; */
 		padding-left: 5%;
-	
+
 	}
+
 	#menu-icon {
 		display: block;
 	}
@@ -775,8 +809,9 @@ section {
 	header {
 		/* padding: 10px 3%; */
 		padding-left: 0%;
-	
+
 	}
+
 	.list {
 		width: 100%;
 	}
